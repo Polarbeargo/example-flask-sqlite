@@ -41,5 +41,5 @@ jobs:
       push: true
       tags: ghcr.io/${{ github.repository_owner }}/flask-pytestexample:latest
       
- - name: Image digest
+  - name: Image digest
     run: echo ${{ steps.docker_build.outputs.digest }}
